@@ -1,0 +1,36 @@
+<div class="p-3">
+  <h1 class="text-center h5 fw-bold p-1 text-white col-md-6 m-3 mx-auto">
+    Emma Weds Viola
+  </h1>
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card-container text-center">
+        <input
+          type="text"
+          [(ngModel)]="guestName"
+          placeholder="Guest's Name (Max. 40 Characters)"
+          maxlength="40"
+          class="form-control text-center border-3 border-dark"
+        />
+
+        <div id="card" class="card-preview position-relative my-3">
+          <img
+            src="bg.png"
+            alt="Card Background"
+            class="card-background img-fluid"
+          />
+          <div class="card-text position-absolute">
+            {{ guestName.toUpperCase() }}
+          </div>
+        </div>
+
+        <button class="btn btn-success m-1" (click)="downloadAsPDF()">
+          Download as PDF
+        </button>
+        <button class="btn btn-warning m-1" (click)="downloadAsImage()">
+          Download as Image
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

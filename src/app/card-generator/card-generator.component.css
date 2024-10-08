@@ -1,0 +1,54 @@
+.card-preview {
+  width: 100%;
+  max-width: 842px; /* A4 width */
+  height: auto;
+  aspect-ratio: 842 / 595; /* Maintain A4 aspect ratio */
+  position: relative;
+  margin: 0 auto;
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure image fits without losing aspect ratio */
+}
+
+.card-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .card-text {
+    font-size: 9px;
+  }
+  .heading {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(14, 106, 69);
+  }
+  input {
+    background-color: rgb(228, 245, 249);
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+}
+
+.heading {
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: rgb(14, 106, 69);
+}
+
+input {
+  background-color: rgb(228, 245, 249);
+  font-weight: bold;
+  font-size: 22px;
+}
